@@ -160,7 +160,7 @@ async def process_transaction(transaction_data):
 
         # Almacenar la transacción en la base de datos
         cursor.execute("""
-            INSERT INTO transactions (
+            INSERT INTO transactions_lauraespinosa (
                 transaction_json,
                 logistic_regression_fraud, logistic_regression_non_fraud,
                 kneighbors_fraud, kneighbors_non_fraud,
